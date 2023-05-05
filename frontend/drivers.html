@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
-  <body>
+  <div>
     <!-- navbar  -->
     <header>
       <nav>
@@ -16,6 +16,39 @@
       </nav>
     </header>
 
+    <!-- loader  -->
+  
+    <!-- popup Add Driver  -->
+    <div id="show">
+      <div id="loader">
+      <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+    </div>
+    <div id="popup">
+      <h3 style="text-align: center; padding: 10px 0px;">Enter Driver Details </h3>
+  <form method="POST">
+    <label for="location">Location:</label>
+    <select name="location" id="location">
+      <option value="Lucknow">Lucknow</option>
+      <option value="Kanpur">Kanpur</option>
+      <option value="Allahabad">Allahabad</option>
+      <option value="Varanasi">Varanasi</option>
+      <option value="Gorakhpur">Gorakhpur</option>
+      <option value="Mumbai">Mumbai</option>
+      <option value="Pune">Pune</option>
+      <option value="Kalyan">Kalyan</option>
+      <option value="Bangalore">Bangalore</option>
+    </select>
+    
+    <input type="text" id="driverName" placeholder="Driver name" name="driverName">
+    <input type="number" id="mobileNumber" placeholder="Mobile number" name="mobileNumber">
+    <input type="text" id="licenceNumber"placeholder="Licence number" name="licenceNumber">
+    <input type="number" id="aadharNumber" placeholder="Aadhar number" name="aadharNumber">
+    <input type="url" id="driverPhoto" placeholder="Driver image url" name="driverPhoto">
+    <input id="submit" style="width: 100%; height: 40px;" type="submit" value="Submit">
+  </form><br><br><br>
+  <button class="close">Close</button>
+    </div>
+  </div>
     <!-- container -->
     <div id="main">
         <div id="sidebar"><a href="./drivers.html">Drivers</a><hr><a href="./cars.html">Cars</a></div>
@@ -23,7 +56,7 @@
         <div class="addDriver">
             <h1 class="topTitle">Drivers</h1>
             <hr>
-            <button>Add Driver</button>
+            <button id="adddrv"><i class="fa fa-plus"></i>Add Driver</button>
         </div>
         <div id="driveList">
           <div class="table">
@@ -33,7 +66,7 @@
               <div class="header__cell">Mobile Number</div>
               <div class="header__cell">Licence Number</div>
               <div class="header__cell">Aadhar Number</div>
-              <div class="header__cell">See More</div>
+              <div class="header__cell">See</div>
             </div>
         <div id="data_js">
           <!-- append all driver data here  -->
@@ -59,12 +92,14 @@
                   <button class="delete"> <i class="fa fa-trash"></i>Delete</button>
               </div>
           </div>
+
           </div>
-        </div>
+
+    
 
         </div>
-      </div>
-    </div>
+        </div>
+        </div>
   </body>
   <script src="./index.js"></script>
 </html>
