@@ -23,7 +23,7 @@
       <div id="loader">
       <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
     </div>
-    
+
     <div id="popup">
       <h3 style="text-align: center; padding: 10px 0px;">Enter Driver Details </h3>
   <form method="POST">
@@ -58,6 +58,18 @@
             <h1 class="topTitle">Drivers</h1>
             <hr>
             <button id="adddrv"><i class="fa fa-plus"></i>Add Driver</button>
+          <lebel>Filter by Location: </lebel> <select name="filterbylocation" id="filter">
+            <option value="">All</option>
+            <option value="Lucknow">Lucknow</option>
+            <option value="Kanpur">Kanpur</option>
+            <option value="Allahabad">Allahabad</option>
+            <option value="Varanasi">Varanasi</option>
+            <option value="Gorakhpur">Gorakhpur</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Pune">Pune</option>
+            <option value="Kalyan">Kalyan</option>
+            <option value="Bangalore">Bangalore</option>
+          </select>
         </div>
         <div id="driveList">
           <div class="table">
@@ -74,8 +86,9 @@
         </div>
         </div>
         </div>
-        </div>
-        </div>
+        
+      </div>
+    </div>
   </body>
   <script src="./index.js"></script>
   <script src="./driver.js"></script>

@@ -17,6 +17,12 @@ let show = document.querySelector("#show");
 
 let addDriver = document.querySelector("#adddrv");
 addDriver.addEventListener("click",()=>{
+  let location = document.querySelector("#location").value;
+  let driverName = document.querySelector("#driverName").value=null;
+  let mobileNumber = document.querySelector("#mobileNumber").value=null;
+  let licenceNumber = document.querySelector("#licenceNumber").value=null;
+  let aadharNumber = document.querySelector("#aadharNumber").value=null;
+  let driverPhoto = document.querySelector("#driverPhoto").value=null;
   show.style.display="block";
 
 })
@@ -63,6 +69,12 @@ form.addEventListener('submit', async (event) => {
 
 
 document.querySelector(".close").addEventListener("click",()=>{
+  let location = document.querySelector("#location").value;
+  let driverName = document.querySelector("#driverName").value=null;
+  let mobileNumber = document.querySelector("#mobileNumber").value=null;
+  let licenceNumber = document.querySelector("#licenceNumber").value=null;
+  let aadharNumber = document.querySelector("#aadharNumber").value=null;
+  let driverPhoto = document.querySelector("#driverPhoto").value=null;
   show.style.display="none";
 })
 
