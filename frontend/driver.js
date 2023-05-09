@@ -126,7 +126,7 @@ let api = "http://localhost:8080"
 // const urlParams = new URLSearchParams(window.location.search);
 const driverId = el._id;
 
-document.querySelector("submit").addEventListener('click', async (event) => {
+document.querySelector("#submit").addEventListener('click', async (event) => {
   event.preventDefault();
   let location = document.querySelector("#location").value;
   let driverName = document.querySelector("#driverName").value;
@@ -144,7 +144,7 @@ document.querySelector("submit").addEventListener('click', async (event) => {
     aadharNumber,
     driverPhoto
   }
-
+// Edit 
   document.querySelector("#loader").style.display="flex";
   try {
     const response = await fetch(`${api}/drivers/${driverId}`, {
